@@ -1,5 +1,5 @@
-import random
 from gvars import *
+import secrets
 
 
 def start_chapter_1():
@@ -25,7 +25,7 @@ def explore_outside():
         #explore_beach()
 def collect_inventory():
     print("hello world")
-    coins_found = random.randint(1, 10)
+    coins_found = secrets.SystemRandom().randint(1, 10)
     import chapter2
     print(f"You explore the surroundings and find {inventory} weapons!")
     chapter2.start_chapter_2()
