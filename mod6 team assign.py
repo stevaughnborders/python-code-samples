@@ -2,9 +2,9 @@
 #02/27/2024
 # find a number between 1 and 10
 
-import random
+import secrets
 
-prob = random.randint(1,10)
+prob = secrets.SystemRandom().randint(1,10)
 #print(prob)
 number=11
 while prob!=number:
